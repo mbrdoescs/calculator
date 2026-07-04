@@ -1,0 +1,187 @@
+.calculator {
+    width: 325px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 20px;
+    height: 320px;
+    box-shadow: 0px 0px 10px 0px rgb(77, 77, 77);
+}
+
+body {
+    background: #111;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 200px;
+    align-items: flex-start;
+}
+
+.display {
+    width: 92%;
+    height: 45px;
+    background: rgb(250, 185, 185);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: left;
+    padding-right: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.settingsbutton {
+    transition: 0.25s;
+}
+.settingsbutton:hover {
+    background: rgb(250, 225, 100);
+    color: rgb(255, 255, 255);
+    transform: scale(1.08);
+}
+
+.number0 {
+    margin-left: 70px;
+}
+
+.title {
+    display: flex;
+    justify-content: left;
+    text-align: right;
+    color: rgb(255, 213, 0);
+    font-size: 80px;
+    margin-right: 70px;
+}
+.settings {
+     width: 220px;
+    min-height: 360px;
+
+    background: #1d1d1d;
+
+    border-radius: 12px;
+
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgb(77, 77, 77);
+    color: white;
+    transition: 0.25s;
+}
+
+.row {
+    display: flex;
+}
+
+.zerorow {
+    margin-left: 60px;
+}
+
+.number,
+.operator,
+.equals,
+.clear {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.number {
+    background: rgb(111, 2, 2);
+}
+.number:hover,
+.operator:hover,
+.equals:hover,
+.clear:hover {
+    background: rgb(249, 86, 86);
+    transform: scale(1.2);
+}
+.operator,
+.equals,
+.clear {
+    background: rgb(160, 48, 48);
+}
+
+.light .number {
+    background: rgb(253, 240, 177);
+    color: rgb(203, 197, 0);
+}
+.light .operator,
+.light .equals,
+.light .clear {
+    background: rgb(255, 248, 211);
+    color: rgb(203, 197, 0);
+}
+.light .display {
+    background: rgb(254, 249, 223);
+    color: rgb(203, 197, 0);
+    border: 3px solid rgb(185, 180, 100);
+}
+.light.number:hover,
+.light.operator:hover,
+.light.equals:hover,
+.light.clear:hover {
+    background: rgb(240, 216, 92);
+    color: black;
+    transform: scale(1.2);
+}
+.light .calculator {
+    background: rgb(255, 255, 255);
+}
+
+.light .number,
+.light .operator,
+.light .equals,
+.light .clear {
+    border: 1px solid rgb(185, 180, 100);
+}
+
+body.light{
+    background: rgb(240, 240, 219);
+
+}
+
+.light .calculator {
+    box-shadow: 0px 0px 10px 0px rgb(101, 96, 46);
+}
+
+.light .settings {
+    background: rgb(253, 245, 180);
+    color: rgb(203, 197, 0);
+    box-shadow: 0px 0px 10px 0px rgb(101, 96, 46);
+    border: 1px solid rgb(185, 180, 100);
+}
+
+.settingsbutton {
+    background: rgb(225, 225, 225);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.light .settingsbutton {
+    background: rgb(255, 255, 241);
+    color: rgb(203, 197, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.light .settingsbutton:hover {
+    background: rgb(245, 137, 137);
+    color: black;
+    transform: scale(1.08);
+}
+
